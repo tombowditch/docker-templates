@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>telly</Name>
+  <Repository>tombowditch/telly</Repository>
+  <Registry>https://hub.docker.com/r/tombowditch/telly/~/dockerfile/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/tombowditch/telly/</Support>
+  <Project>https://github.com/tombowditch/telly</Project>
+  <Overview>&#xD;
+&#xD;
+[b]Converted By Community Applications[/b]</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:6077]</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.discordapp.com/attachments/414169930544578562/415964140432130048/Screenshot_2018-02-21_14.12.44.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1519245118</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>&#xD;
+&#xD;
+[b]Converted By Community Applications[/b]</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6077</HostPort>
+        <ContainerPort>6077</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/mnt</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>STREAMS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>PLAYLIST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>USEREGEX</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Host Port 1" Target="6077" Default="6077" Mode="tcp" Description="Container Port: 6077" Type="Port" Display="always" Required="true" Mask="false">6077</Config>
+  <Config Name="Streams Allowed" Target="STREAMS" Default="" Mode="" Description="How many streams your IPTV provides" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="/mnt" Target="/mnt" Default="" Mode="rw" Description="Container Path: /mnt" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Path or URL to m3u playlist" Target="PLAYLIST" Default="" Mode="" Description="Add your URL or m3u location here" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="USEREGEX" Target="USEREGEX" Default="" Mode="" Description="Filter Countries etc with regex example UK|US for UK and US only" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
