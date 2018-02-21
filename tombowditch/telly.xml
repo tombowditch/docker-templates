@@ -60,8 +60,8 @@
     </Variable>
   </Environment>
   <Config Name="Host Port 1" Target="6077" Default="6077" Mode="tcp" Description="Container Port: 6077" Type="Port" Display="always" Required="true" Mask="false">6077</Config>
-  <Config Name="Streams Allowed" Target="STREAMS" Default="" Mode="" Description="How many streams your IPTV provides" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Streams Allowed" Target="STREAMS" Default="1" Mode="" Description="How many streams your IPTV provides" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="/mnt" Target="/mnt" Default="" Mode="rw" Description="Container Path: /mnt" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="Path or URL to m3u playlist" Target="PLAYLIST" Default="" Mode="" Description="Add your URL or m3u location here" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="USEREGEX" Target="USEREGEX" Default="" Mode="" Description="Filter Countries etc with regex example UK|US for UK and US only" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Path or URL to m3u playlist" Target="PLAYLIST" Default="" Mode="" Description="Add your URL or m3u location here" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="USEREGEX" Target="USEREGEX" Default="" Mode="" Description="Filter Countries etc with regex example 'UK|US' for UK and US only" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
