@@ -8,23 +8,19 @@
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/tombowditch/telly/</Support>
   <Project>https://github.com/tombowditch/telly</Project>
-  <Overview>&#xD;
+  <Overview>Telly - IPTV on Plex Live TV&#xD;
 &#xD;
-[b]Converted By Community Applications[/b]</Overview>
-  <Category/>
+An IPTV Proxy for Plex Live TV &amp;amp; DVR</Overview>
+  <Category>Tools: MediaApp:Video MediaServer:Video Network:Proxy</Category>
   <WebUI>http://[IP]:[PORT:6077]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://github.com/tombowditch/docker-templates</TemplateURL>
   <Icon>https://i.imgur.com/Xua1TjV.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <DateInstalled>1519245118</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
-  <DonateImg/>
-  <MinVer/>
-  <Description>&#xD;
+  <DateInstalled>1519326784</DateInstalled>
+  <Description>Telly - IPTV on Plex Live TV&#xD;
 &#xD;
-[b]Converted By Community Applications[/b]</Description>
+An IPTV Proxy for Plex Live TV &amp;amp; DVR</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -37,14 +33,14 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir/>
-      <ContainerDir>/mnt</ContainerDir>
+      <HostDir>/mnt/user/appdata/telly/tmp</HostDir>
+      <ContainerDir>/tmp</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment>
     <Variable>
-      <Value/>
+      <Value>1</Value>
       <Name>STREAMS</Name>
       <Mode/>
     </Variable>
@@ -59,9 +55,9 @@
       <Mode/>
     </Variable>
   </Environment>
-  <Config Name="Host Port 1" Target="6077" Default="6077" Mode="tcp" Description="Container Port: 6077" Type="Port" Display="always" Required="true" Mask="false">6077</Config>
-  <Config Name="Streams Allowed" Target="STREAMS" Default="1" Mode="" Description="How many streams your IPTV provides" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="/mnt" Target="/mnt" Default="" Mode="rw" Description="Container Path: /mnt" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="Path or URL to m3u playlist" Target="PLAYLIST" Default="" Mode="" Description="Add your URL or m3u location here" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="USEREGEX" Target="USEREGEX" Default="" Mode="" Description="Filter Countries etc with regex example 'UK|US' for UK and US only" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Host Port" Target="6077" Default="6077" Mode="tcp" Description="Container Port: 6077" Type="Port" Display="always" Required="true" Mask="false">6077</Config>
+  <Config Name="Streams Allowed" Target="STREAMS" Default="1" Mode="" Description="How many streams your IPTV provides" Type="Variable" Display="always" Required="true" Mask="false">1</Config>
+  <Config Name="Path or URL to m3u playlist from IPTV Provider" Target="PLAYLIST" Default="" Mode="" Description="Add your URL or m3u location here" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="USEREGEX" Target="USEREGEX" Default="" Mode="" Description="Filter Countries etc with regex example UK|US for UK and US only" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="/tmp" Target="/tmp" Default="" Mode="rw" Description="Path to /tmp folder" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/telly/tmp</Config>
 </Container>
