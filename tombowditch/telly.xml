@@ -14,7 +14,7 @@ An IPTV Proxy for Plex Live TV &amp;amp; DVR</Overview>
   <Category>Tools: MediaApp:Video MediaServer:Video Network:Proxy</Category>
   <WebUI>http://[IP]:[PORT:6077]</WebUI>
   <TemplateURL>https://github.com/tombowditch/docker-templates/raw/master/tombowditch/telly.xml</TemplateURL>
-  <Icon>https://i.imgur.com/Xua1TjV.png</Icon>
+  <Icon>https://i.imgur.com/eapTTSL.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DateInstalled>1519326784</DateInstalled>
